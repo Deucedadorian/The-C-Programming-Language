@@ -7,20 +7,21 @@
 
 #define MAXLINE 1000
 
-void copy(char from[], char to[]) {
-    for (int i = 0; (to[i] = from[i]) != '\0'; ++i);
-}
-
 void reverse(char s[]) {
-    char temp[MAXLINE];
-    int i, sPlace;
+    char temp;
+    int i, j;
 
-    for (i = sPlace = 0; s[i + 1] != '\n'; ++i);
-
-    copy(s, temp);
-    for (i=i; i >= 0; --i) {
-        s[i] = temp[sPlace];
-        ++sPlace;
+    for (i = 0; s[i] != '\0'; ++i);
+    --i;
+    if (s[i] == '\n')
+        --i;
+    j = 0; 
+    while (i > j) {
+        temp = s[i];
+        s[i] = s[j];
+        s[j] = temp;
+        --i;
+        ++j;
     }
 }
 

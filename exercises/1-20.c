@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define TABSIZE 4   /* number of characters per tab */
+#define TABSIZE 8   /* number of characters per tab */
 
 int main() {
    int c, col;

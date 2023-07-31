@@ -1,3 +1,5 @@
+#include "headers/expand.h"
+
 /* by Axel Schreiner of the University of Osnabruck West Germany    */
 /* expand: expand shorthand notation in s1 into string s2           */
 void expand(char s1[], char s2[]) {

@@ -1,4 +1,3 @@
-#include "../../chapter4/examples/calculator/calc.h"
 #include <stdio.h>
 #include <ctype.h>
 
